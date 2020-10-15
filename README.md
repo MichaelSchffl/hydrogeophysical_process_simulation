@@ -9,7 +9,7 @@ A: cross-sectional area of medium [m^2]<br/>
 dh: hydraulic head [m]<br/>
 dl: distance of flow [m]<br/>
 <br/>
-![](/images/Darcy.png)
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/Darcy.png" width="400" height="790">
 <br/>
 Due to this subsurface flow and its contact with the electrically charged rock interfaces, electrical charges in the pore water are draged along with the flow, creating an electric current (also streaming current).<br/>
 This leads to the generation of an electric field, called the streaming potential <img src="https://render.githubusercontent.com/render/math?math={\varphi}">.:<br/>
