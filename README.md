@@ -20,9 +20,9 @@ This leads to the generation of an electric field, called the streaming potentia
 L: dimensionless parameter<br/>
 h: hydraulic head [m]<br/>
 <br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/SP.png" width="600" height="411">
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/SP.png" width="400" height="274">
 <br/>
-(image credit: >Revil et al.(2017))<br/>
+(image credit: Revil et al.(2017))<br/>
 With this, we have a subsurface flow that generates an electric field. Now we can go forward an create a world with any geometry and simulate a subsurface flow. We can solve the above equations using a Finite Element scheme implemented in the PyGimli library. We could then insert a tracer that acts as a fluid to run through the porous medium.
 The transport process of the fluid (advection, diffusion) is governed by the advection-diffusion equation:<br/>
 <img src="https://render.githubusercontent.com/render/math?math={\frac{\partial c}{\partial t} = \underbrace{\nabla\cdot(D \nabla c)}_{\text{Diffusion / Dispersion}} - \underbrace{\mathbf{v}\nabla c}_{\text{Advection}} + S}"><br/>
