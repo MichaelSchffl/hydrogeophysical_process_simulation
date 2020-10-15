@@ -9,8 +9,9 @@ A: cross-sectional area of medium [m^2]<br/>
 dh: hydraulic head [m]<br/>
 dl: distance of flow [m]<br/>
 <br/>
-\\\insert pic<br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/Darcy.png" width="674" height="383">
 <br/>
+(image credit: F.Wagner)<br/>
 Due to this subsurface flow and its contact with the electrically charged rock interfaces, electrical charges in the pore water are draged along with the flow, creating an electric current (also streaming current).<br/>
 This leads to the generation of an electric field, called the streaming potential <img src="https://render.githubusercontent.com/render/math?math={\varphi}">.:<br/>
 <img src="https://render.githubusercontent.com/render/math?math={\nabla \cdot (\sigma \nabla \varphi) = \nabla \cdot (L \textbf{v})}">.<br/>
@@ -19,8 +20,9 @@ This leads to the generation of an electric field, called the streaming potentia
 L: dimensionless parameter<br/>
 h: hydraulic head [m]<br/>
 <br/>
-\\\insert pic with rock matrix<br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/SP.png" width="400" height="274">
 <br/>
+(image credit: Revil et al.(2017))<br/>
 With this, we have a subsurface flow that generates an electric field. Now we can go forward an create a world with any geometry and simulate a subsurface flow. We can solve the above equations using a Finite Element scheme implemented in the PyGimli library. We could then insert a tracer that acts as a fluid to run through the porous medium.
 The transport process of the fluid (advection, diffusion) is governed by the advection-diffusion equation:<br/>
 <img src="https://render.githubusercontent.com/render/math?math={\frac{\partial c}{\partial t} = \underbrace{\nabla\cdot(D \nabla c)}_{\text{Diffusion / Dispersion}} - \underbrace{\mathbf{v}\nabla c}_{\text{Advection}} + S}"><br/>
