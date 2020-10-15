@@ -51,7 +51,7 @@ Now we can simulate the electrical resistivity of the subsurface with electrical
 
 ## Chosen values for this geometry
 
-In my example, an aquifer lies below limestone. The limestone is beneath soil that reaches 20m high. The layers are slightly tilted so that we have to consider topography.
+In my example (main.ipynb), an aquifer lies below limestone. The limestone is beneath soil that reaches 20m high. The layers are slightly tilted so that we have to consider topography.
 In the following, the chosen values for each step of the process are shown.
 
 ### world dimensions: 
