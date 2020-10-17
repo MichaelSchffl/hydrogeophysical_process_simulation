@@ -114,7 +114,7 @@ injections stopped after: steps/2  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={v_{max}}"> = 0.000166 m/s  <br/>
 c = <img src="https://render.githubusercontent.com/render/math?math={\frac{v_{max} \Delta t} {\Delta x}}"> = 4.78  <br/>
 
-The final simulation of the injected salt tracer concentration after 12, 21.6, 27.6, 36, 60 and 84 hours is shown below from left to right and top down.
+The final simulation of the injected salt tracer concentration after 12, 21.6, 27.6, 36, 60 and 84 hours is shown below from left to right and top down.<br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc0.png" width="500" height="300"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc1.png" width="500" height="300">
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc2.png" width="500" height="300"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc3.png" width="500" height="300">
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc4.png" width="500" height="300"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc5.png" width="500" height="300">
