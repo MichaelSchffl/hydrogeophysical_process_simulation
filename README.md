@@ -35,7 +35,7 @@ v: velocity [m/s]<br/>
 S: tracer amount [g/ls]<br/>
 <br/>
 Now, it's possible to translate the simulated fluid concentration into geophysical properties if we assocaite the tracer concentration with salt content and assume dominance of electrolytic conduction. Then, the fluid resistivity <img src="https://render.githubusercontent.com/render/math?math={\rho_f}"> can be obtained by:<br/>
-<img src="https://render.githubusercontent.com/render/math?math={\frac{1}{0.1 \cdot c + \sigma_0}}">, with<br/>
+1 / (0.1 c + <img src="https://render.githubusercontent.com/render/math?math={\sigma_0}}">), with<br/>
 c: (salt-)tracer concentration [g/l]<br/>
 <img src="https://render.githubusercontent.com/render/math?math={\sigma_0}">: conductivity of groundwater [S/m]<br/>
 <br/>
