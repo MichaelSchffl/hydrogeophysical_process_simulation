@@ -28,8 +28,7 @@ h: hydraulic head [m]<br/>
 
 With this, we have a subsurface flow that generates an electric field. Now we can go forward an create a world with any geometry and simulate a subsurface flow. We can solve the above equations using a Finite Element scheme implemented in the PyGimli library. We could then insert a tracer that acts as a fluid to run through the porous medium.
 The transport process of the fluid (advection, diffusion) is governed by the advection-diffusion equation:<br/>
-<img src="https://render.githubusercontent.com/render/math?math={\frac{\partial c}{\partial t} = \underbrace{\nabla\cdot(D \nabla c)}_{\text{Diffusion / Dispersion}} - \underbrace{\mathbf{v}\nabla c}_{\text{Advection}} \mathplus S}"> <br/>
-<img src="https://render.githubusercontent.com/render/math?math={plus \plus ++ + + + + \mathplus \plus plus + \+ $+$}"> <br/>
+<img src="https://render.githubusercontent.com/render/math?math={\frac{\partial c}{\partial t} = \underbrace{\nabla\cdot(D \nabla c)}_{\text{Diffusion / Dispersion}} - \underbrace{\mathbf{v}\nabla c}_{\text{Advection}}   +   S}"> <br/>
 c: tracer concentration [g/l]<br/>
 D: dispersion rate [m/s], D = <img src="https://render.githubusercontent.com/render/math?math={\alpha \cdot \textbf{v}_{abs}}"><br/>
 v: velocity [m/s]<br/>
@@ -59,8 +58,8 @@ In my example (gravel_aquifer_between_sandstone.ipynb), a gravel layer that lies
 In the following, the chosen values for each step of the process are shown, as well as the result of the above mentioned equations.
 
 ### world dimensions: 
-x-direction [m]: 0-34  <br/>
-y-direction [m]: 20-(-3)  <br/>
+x-direction [m]: 0 - 34  <br/>
+y-direction [m]: -3 - 20  <br/>
 
 This image below shows the geometry of the setup 
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry.png" width="674" height="383"><br/>
@@ -68,53 +67,74 @@ The mesh quality is shown by red triangles<br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality.png" width="674" height="383">
 
 ### hydraulic potential:
-h1 [m] = 5  <br/>
-h2 [m] = 0.2  <br/>
-world: <img src="https://render.githubusercontent.com/render/math?math={10^{-4}}">  <br/>
-rock: <img src="https://render.githubusercontent.com/render/math?math={10^{-7}}">  <br/>
-rock2: <img src="https://render.githubusercontent.com/render/math?math={10^{-8}}">  <br/>
-boundary conditions: Dirichlet (left: h1, right: h2)  <br/>
+h1 [m] = 16  <br/>
+h2 [m] = 10  <br/>
+h3 [m] = 2  <br/>
+h4 [m] = -1  <br/>
+
+boundary conditions (Dirichlet) <br/>
+left upper gravel layer: h1, <br/>
+right upper gravel layer: h2, <br/>
+left lower gravel layer: h3, <br/>
+right lower gravel layer: h4 <br/>
+
+hydraulic conductivity K [m/s]: <br/>
+upper and lower sandstone layer (markers 1 & 3): <img src="https://render.githubusercontent.com/render/math?math={2 \cdot 10^{-7}}"> <br/>
+upper and lower gravel aquifers (markers 2 & 4): <img src="https://render.githubusercontent.com/render/math?math={\cdot 10^{-3}}"> <br/>
+limestone, dolomite rock (marker 5): <img src="https://render.githubusercontent.com/render/math?math={10^{-7}}"> <br/>
+clean sand body (marker 6): <img src="https://render.githubusercontent.com/render/math?math={8 \cdot 10^{-3}}"> <br/>
+
 velocity v [m/s]: <img src="https://render.githubusercontent.com/render/math?math={\textbf{v} = \frac{-K \nabla h} {\phi}}">  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={\textbf{v}_{abs} = \sqrt{\textbf{v}_x^2 + \textbf{v}_y^2}}">  <br/>
 porosity <img src="https://render.githubusercontent.com/render/math?math={\phi}"> = 0.3  <br/>
-Here is the hydraulic cinductivity for each layer and feature
+
+This is the hydraulic conductivity for each layer and feature visualized
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydr_cond.png" width="674" height="383"> <br/>
-and the hydraulic head distribution <br/>
+as well as the hydraulic head distribution <br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydraulic_grad.png" width="674" height="383">
 
 
 ### streaming potential:
 L = 10  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={\varphi1}"> [V] = 0  <br/>
-<img src="https://render.githubusercontent.com/render/math?math={\varphi2}"> [V] = 0  <br/>
-boundary conditions: Dirichlet (left: <img src="https://render.githubusercontent.com/render/math?math={\varphi1, right: \varphi2}">)    <br/>
+<img src="https://render.githubusercontent.com/render/math?math={\varphi2}"> [V] = 0.01  <br/>
+<img src="https://render.githubusercontent.com/render/math?math={\varphi2}"> [V] = 0.1  <br/>
+
+boundary conditions (Dirichlet) <br/>
+upper left gravel layer: <img src="https://render.githubusercontent.com/render/math?math={\varphi1}">
+upper right gravel layer: <img src="https://render.githubusercontent.com/render/math?math={\varphi2}">
+limestone, dolomite rock: <img src="https://render.githubusercontent.com/render/math?math={\varphi3}">
+
 electrical conductivity <img src="https://render.githubusercontent.com/render/math?math={\sigma}"> [S/m] for each part of the geometry:  <br/>
-world: <img src="https://render.githubusercontent.com/render/math?math={9 \cdot 10^{-1}}">  <br/>
-circle: <img src="https://render.githubusercontent.com/render/math?math={3 \cdot 10^{-4}}">  <br/>
-polygon: <img src="https://render.githubusercontent.com/render/math?math={10^{-4}}"><br/>
+upper sandstone layer: <img src="https://render.githubusercontent.com/render/math?math={7 \cdot 10^{-4}}"> <br/>
+upper gravel layer: <img src="https://render.githubusercontent.com/render/math?math={9 \cdot 10^{-4}}"> <br/>
+lower sandstone layer: <img src="https://render.githubusercontent.com/render/math?math={10^{-4}}"> <br/>
+lower gravel layer: <img src="https://render.githubusercontent.com/render/math?math={4 \cdot 10^{-4}}"> <br/>
+limestone, dolomite rock: <img src="https://render.githubusercontent.com/render/math?math={3 \cdot 10^{-1}}"> <br/>
+clean sand body: <img src="https://render.githubusercontent.com/render/math?math={3 \cdot 10^{-1}}"> <br/>
 
 The streaming potential of the given geometry can be seen here
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/stream_pot.png" width="674" height="383">
 
 ### tracer transport:
-3 tracer injection positions S[x,y]:  <br/>
-position1 = [5,2.5]  <br/>
-position2 = [2.5,7]  <br/>
-position3 = [8,6.5]  <br/>
-injection load [g/l]: 0.001  <br/>
-dispersion rate D [m/s]:   <br/>
+2 tracer injection positions S[x,y]:  <br/>
+position1 = [2,16]  <br/>
+position2 = [5,0]  <br/>
+injection load 1 [mg/l]: 5  <br/>
+injection load 2 [mg/l]: 12.5  <br/>
+dispersion rate D [m/s] = <img src="https://render.githubusercontent.com/render/math?math={\alpha \cdot v_{abs}}">  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={\alpha = 10^{-3}}">  <br/>
 
 ###### timestepping:
-steps: 100  <br/>
+steps: 5000  <br/>
 timeperiod [days] = 5  <br/>
-intervall <img src="https://render.githubusercontent.com/render/math?math={\Delta t}"> = timeperiod[sec]/(steps-1) = 4363.6 sec  <br/>
+intervall <img src="https://render.githubusercontent.com/render/math?math={\Delta t}"> = timeperiod[sec]/(steps-1) = 86.417 sec  <br/>
 injections stopped after: steps/2  <br/>
 
 ##### CFL criterion:  
-<img src="https://render.githubusercontent.com/render/math?math={\Delta x}"> = 0.15 m  <br/>
-<img src="https://render.githubusercontent.com/render/math?math={v_{max}}"> = 0.000166 m/s  <br/>
-c = <img src="https://render.githubusercontent.com/render/math?math={\frac{v_{max} \Delta t} {\Delta x}}"> = 4.78  <br/>
+<img src="https://render.githubusercontent.com/render/math?math={\Delta x}"> = 0.11809 m  <br/>
+<img src="https://render.githubusercontent.com/render/math?math={v_{max}}"> = 0.00127 m/s  <br/>
+cfl-criterion = <img src="https://render.githubusercontent.com/render/math?math={\frac{v_{max} \Delta t} {\Delta x}}"> = 0.9312   <br/>
 
 The final simulation of the injected salt tracer concentration after 12, 21.6, 27.6, 36, 60 and 84 hours is shown below from left to right and top down.<br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc0.png" width="500" height="300"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc1.png" width="500" height="300">
@@ -123,10 +143,9 @@ The final simulation of the injected salt tracer concentration after 12, 21.6, 2
 
 ### electrical conductivity:
 <img src="https://render.githubusercontent.com/render/math?math={\sigma_0}"> [S/m] = 0.01  <br/>
-<img src="https://render.githubusercontent.com/render/math?math={\sigma_W = 0.1 c + \sigma_0}">  <br/>
-<img src="https://render.githubusercontent.com/render/math?math={\sigma_W}">  = 0.01-1000 S/m  <br/>
+<img src="https://render.githubusercontent.com/render/math?math={\sigma_W = 0.1 \cdot c   +   \sigma_0}">  <br/>
 
-### electrical resitivity:
+### electrical resitivity tomography (ERT):
 Archie's equation for <img src="https://render.githubusercontent.com/render/math?math={\rho_b [\Omega m]}">:  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={\rho_b = a \cdot (1/\sigma_W)\cdot\phi^{-m}\cdot S^{-n}}"> <br/>
 <img src="https://render.githubusercontent.com/render/math?math={\rho_b = 10^{-3}-25  \Omega m}">  <br/>
@@ -134,3 +153,6 @@ a=1  <br/>
 m=2  <br/>
 S=1  <br/>
 n=2  <br/>
+measurement array: dipole-dipole <br/> 
+from 0 - 34m <br/>
+dx = 1.0m <br/>
