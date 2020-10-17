@@ -58,7 +58,7 @@ In the following, the chosen values for each step of the process are shown, as w
 x-direction [m]: 0-34  <br/>
 y-direction [m]: 20-(-3)  <br/>
 
-This image below shows the geomtry of the setup 
+This image below shows the geometry of the setup 
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry.png" width="674" height="383"><br/>
 The mesh quality is shown by red triangles<br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality.png" width="674" height="383">
@@ -74,9 +74,9 @@ velocity v [m/s]: <img src="https://render.githubusercontent.com/render/math?mat
 <img src="https://render.githubusercontent.com/render/math?math={\textbf{v}_{abs} = \sqrt{\textbf{v}_x^2 + \textbf{v}_y^2}}">  <br/>
 porosity <img src="https://render.githubusercontent.com/render/math?math={\phi}"> = 0.3  <br/>
 Here is the hydraulic cinductivity for each layer and feature
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydr_cond.png" width="674" height="383">
-and the hydraulic head distribution
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/Darcy.png" width="674" height="383">
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydr_cond.png" width="674" height="383"> <br/>
+and the hydraulic head distribution <br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydraulic_grad.png" width="674" height="383">
 
 
 ### streaming potential:
@@ -113,7 +113,11 @@ injections stopped after: steps/2  <br/>
 c = <img src="https://render.githubusercontent.com/render/math?math={\frac{v_{max} \Delta t} {\Delta x}}"> = 4.78  <br/>
 
 The final simulation of the injected salt tracer concentration after 12, 21.6, 27.6, 36, 60 and 84 hours is shown below from left to right and top down.
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/concentration_subplots.png" width="674" height="383">
+    |  
+:-------------------------:|:-------------------------:
+![](/images/conc0.png)  |  ![](/images/conc1.png)
+![](/images/conc2.png)  |  ![](/images/conc3.png)
+![](/images/conc4.png)  |  ![](/images/conc5.png)
 
 ### electrical conductivity:
 <img src="https://render.githubusercontent.com/render/math?math={\sigma_0}"> [S/m] = 0.01  <br/>
