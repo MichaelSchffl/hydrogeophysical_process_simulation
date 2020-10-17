@@ -49,10 +49,10 @@ Now we can simulate the electrical resistivity of the subsurface with electrical
 
 
 
-## Chosen values for this geometry
+## Setup and Results
 
-In my example (main.ipynb), an aquifer lies below limestone. The limestone is beneath soil that reaches 20m high. The layers are slightly tilted so that we have to consider topography.
-In the following, the chosen values for each step of the process are shown.
+In my example (gravel_aquifer_between_sandstone.ipynb), a gravel layer that lies inbetween two sandstone layers acts as aquifer. This means, its hydraulic conductivity is high and it can bear water well. The sandstone layers have a low hydraulic conductivity and do not carry water as well. Below these three layers follows another layer of gravel. Within the upper gravel layer is a limestone dolomite that again is a low quality aquifer. In the lower gravel layer is a fine sand body that  bears water very well, hence has a high hydraulic conductivity.
+In the following, the chosen values for each step of the process are shown, as well as the result of the above mentioned equations.
 
 ### world dimensions: 
 x-direction [m]: 0-34  <br/>
