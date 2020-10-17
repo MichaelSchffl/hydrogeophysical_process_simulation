@@ -11,5 +11,5 @@ def solveStreampot(mesh, sigma, bc, f):
     fig, axes = plt.subplots(figsize =(16,8))
     #pg.show(mesh, E, ax = axes, hold=True)
     #mt.nodeDataToCellData(mesh1, phi)
-    pg.show(mesh, phi*1000, label = r"streaming potential " r"$\varphi$ [mV]", ax=axes, cmap = 'RdBu_r', nLevs = 11)
+    pg.show(mesh, phi*1000, label = r"streaming potential " r"$\varphi$ [mV]", ax=axes, cMap = 'RdBu_r', nLevs = 11)
     return phi,E
