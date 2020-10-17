@@ -28,7 +28,7 @@ h: hydraulic head [m]<br/>
 
 With this, we have a subsurface flow that generates an electric field. Now we can go forward an create a world with any geometry and simulate a subsurface flow. We can solve the above equations using a Finite Element scheme implemented in the PyGimli library. We could then insert a tracer that acts as a fluid to run through the porous medium.
 The transport process of the fluid (advection, diffusion) is governed by the advection-diffusion equation:<br/>
-<img src="https://render.githubusercontent.com/render/math?math={\frac{\partial c}{\partial t} = \underbrace{\nabla\cdot(D \nabla c)}_{\text{Diffusion / Dispersion}} - \underbrace{\mathbf{v}\nabla c}_{\text{Advection}}}" + S><br/>
+<img src="https://render.githubusercontent.com/render/math?math={\frac{\partial c}{\partial t} = \underbrace{\nabla\cdot(D \nabla c)}_{\text{Diffusion / Dispersion}} - \underbrace{\mathbf{v}\nabla c}_{\text{Advection}}}"> + S<br/>
 c: tracer concentration [g/l]<br/>
 D: dispersion rate [m/s], D = <img src="https://render.githubusercontent.com/render/math?math={\alpha \cdot \textbf{v}_{abs}}"><br/>
 v: velocity [m/s]<br/>
