@@ -101,9 +101,9 @@ L = 10  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={\varphi2}"> [V] = 0.1  <br/>
 
 boundary conditions (Dirichlet) <br/>
-upper left gravel layer: <img src="https://render.githubusercontent.com/render/math?math={\varphi1}">
-upper right gravel layer: <img src="https://render.githubusercontent.com/render/math?math={\varphi2}">
-limestone, dolomite rock: <img src="https://render.githubusercontent.com/render/math?math={\varphi3}">
+upper left gravel layer: <img src="https://render.githubusercontent.com/render/math?math={\varphi1}"> <br/>
+upper right gravel layer: <img src="https://render.githubusercontent.com/render/math?math={\varphi2}"> <br/>
+limestone, dolomite rock: <img src="https://render.githubusercontent.com/render/math?math={\varphi3}"> <br/>
 
 electrical conductivity <img src="https://render.githubusercontent.com/render/math?math={\sigma}"> [S/m] for each part of the geometry:  <br/>
 upper sandstone layer: <img src="https://render.githubusercontent.com/render/math?math={7 \cdot 10^{-4}}"> <br/>
