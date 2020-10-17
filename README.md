@@ -49,14 +49,19 @@ Now we can simulate the electrical resistivity of the subsurface with electrical
 
 
 
-## Chosen values for this geometry
+## Setup and Results
 
-In my example, an aquifer lies below limestone. The limestone is beneath soil that reaches 20m high. The layers are slightly tilted so that we have to consider topography.
-In the following, the chosen values for each step of the process are shown.
+In my example (gravel_aquifer_between_sandstone.ipynb), a gravel layer that lies inbetween two sandstone layers acts as aquifer. This means, its hydraulic conductivity is high and it can bear water well. The sandstone layers have a low hydraulic conductivity and do not carry water as well. Below these three layers follows another layer of gravel. Within the upper gravel layer is a limestone dolomite that again is a low quality aquifer. In the lower gravel layer is a fine sand body that  bears water very well, hence has a high hydraulic conductivity.
+In the following, the chosen values for each step of the process are shown, as well as the result of the above mentioned equations.
 
 ### world dimensions: 
 x-direction [m]: 0-34  <br/>
 y-direction [m]: 20-(-3)  <br/>
+
+This image below shows the geomtry of the setup 
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry.png" width="674" height="383">
+The mesh quality is shown by red triangles
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality.png" width="674" height="383">
 
 ### hydraulic potential:
 h1 [m] = 5  <br/>
@@ -68,6 +73,11 @@ boundary conditions: Dirichlet (left: h1, right: h2)  <br/>
 velocity v [m/s]: <img src="https://render.githubusercontent.com/render/math?math={\textbf{v} = \frac{-K \nabla h} {\phi}}">  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={\textbf{v}_{abs} = \sqrt{\textbf{v}_x^2 + \textbf{v}_y^2}}">  <br/>
 porosity <img src="https://render.githubusercontent.com/render/math?math={\phi}"> = 0.3  <br/>
+Here is the hydraulic cinductivity for each layer and feature
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydr_cond.png" width="674" height="383">
+and the hydraulic head distribution
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/Darcy.png" width="674" height="383">
+
 
 ### streaming potential:
 L = 10  <br/>
@@ -78,6 +88,9 @@ electrical conductivity <img src="https://render.githubusercontent.com/render/ma
 world: <img src="https://render.githubusercontent.com/render/math?math={9 \cdot 10^{-1}}">  <br/>
 circle: <img src="https://render.githubusercontent.com/render/math?math={3 \cdot 10^{-4}}">  <br/>
 polygon: <img src="https://render.githubusercontent.com/render/math?math={10^{-4}}"><br/>
+
+The streaming potential of the given geometry can be seen here
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/stream_pot.png" width="674" height="383">
 
 ### tracer transport:
 3 tracer injection positions S[x,y]:  <br/>
@@ -98,6 +111,9 @@ injections stopped after: steps/2  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={\Delta x}"> = 0.15 m  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={v_{max}}"> = 0.000166 m/s  <br/>
 c = <img src="https://render.githubusercontent.com/render/math?math={\frac{v_{max} \Delta t} {\Delta x}}"> = 4.78  <br/>
+
+The final simulation of the injected salt tracer concentration after 12, 21.6, 27.6, 36, 60 and 84 hours is shown below from left to right and top down.
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/concentration_subplots.png" width="674" height="383">
 
 ### electrical conductivity:
 <img src="https://render.githubusercontent.com/render/math?math={\sigma_0}"> [S/m] = 0.01  <br/>
