@@ -84,6 +84,7 @@ upper and lower sandstone layer (markers 1 & 3): <img src="https://render.github
 upper and lower gravel aquifers (markers 2 & 4): <img src="https://render.githubusercontent.com/render/math?math={\cdot 10^{-3}}"> <br/>
 limestone, dolomite rock (marker 5): <img src="https://render.githubusercontent.com/render/math?math={10^{-7}}"> <br/>
 clean sand body (marker 6): <img src="https://render.githubusercontent.com/render/math?math={8 \cdot 10^{-3}}"> <br/>
+(values from Domenico and Schwartz 1990) <br/>
 
 velocity v [m/s]: <img src="https://render.githubusercontent.com/render/math?math={\textbf{v} = \frac{-K \nabla h} {\phi}}">  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={\textbf{v}_{abs} = \sqrt{\textbf{v}_x^2 plus \textbf{v}_y^2}}">  <br/>
