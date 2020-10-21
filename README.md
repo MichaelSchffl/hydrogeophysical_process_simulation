@@ -1,6 +1,6 @@
 # Hydrogeophysical Process Simulation
 
-this file explains the objective of this project in a broader frame, gives instruction on how to run the code and explains the hydrogeophsical model the simulation is applied on alongside the results it produces.
+This file explains the objective of this project in a broader frame, gives instruction on how to run the code and explains the hydrogeophsical model the simulation is applied on alongside the results it produces.
 
 ## Introduction
 
