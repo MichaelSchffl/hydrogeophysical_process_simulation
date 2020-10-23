@@ -148,6 +148,12 @@ The final simulation of the injected salt tracer concentration after 12, 21.6, 2
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc2.png" width="500" height="300"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc3.png" width="500" height="300">
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc4.png" width="500" height="300"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc5.png" width="500" height="300">
 
+and in animation form:<br/>
+
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/concentration_animation.gif" width="500" height="300">
+
+
+
 ### electrical conductivity:
 <img src="https://render.githubusercontent.com/render/math?math={\sigma_0}"> [S/m] = 0.01  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={\sigma_W = 0.1 \cdot c   +   \sigma_0}">  <br/>
