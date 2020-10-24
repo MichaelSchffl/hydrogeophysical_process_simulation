@@ -1,6 +1,6 @@
 # Hydrogeophysical Process Simulation
 
-This file explains the objective of this project in a broader frame, gives instruction on how to run the code and explains the hydrogeophsical model the simulation is applied on alongside the results it produces.
+This file explains the objective of this project in a broader frame, gives instruction on how to run the code and explains the hydrogeophsical model the simulation is applied on alongside the results it produces. If any questions about this project arise, please don't hesitate to contact me (mic.schoeffel[at]gmail[dot]com).
 
 ## Introduction
 
@@ -129,8 +129,12 @@ position1 = [2,16]  <br/>
 position2 = [5,0]  <br/>
 injection load 1 [mg/l]: 5  <br/>
 injection load 2 [mg/l]: 12.5  <br/>
+injection time 1: 0s (right at the start) <br/>
+time of injection 1: 15% of time (18hrs) <br/>
+injection time 2: 0s (right at the start) <br/>
+time of injection 2: 25% - 50% of time (1 day, 6hrs) <br/>
 dispersion rate D [m/s] = <img src="https://render.githubusercontent.com/render/math?math={\alpha \cdot v_{abs}}">  <br/>
-<img src="https://render.githubusercontent.com/render/math?math={\alpha = 10^{-3}}">  <br/>
+dispersivity <img src="https://render.githubusercontent.com/render/math?math={\alpha = 10^{-3}}">  <br/>
 
 ###### timestepping:
 steps: 5000  <br/>
@@ -141,12 +145,11 @@ injections stopped after: steps/2  <br/>
 ###### CFL criterion:  
 <img src="https://render.githubusercontent.com/render/math?math={\Delta x}"> = 0.11809 m  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={v_{max}}"> = 0.00127 m/s  <br/>
-cfl-criterion = <img src="https://render.githubusercontent.com/render/math?math={\frac{v_{max} \Delta t} {\Delta x}}"> = 0.9312   <br/>
+cfl-criterion = <img src="https://render.githubusercontent.com/render/math?math={\frac{v_{max} \Delta t} {\Delta x}}"> = 0.93192   <br/>
 
-The final simulation of the injected salt tracer concentration after 12, 21.6, 27.6, 36, 60 and 84 hours is shown below from left to right and top down.<br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc0.png" width="500" height="300"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc1.png" width="500" height="300">
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc2.png" width="500" height="300"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc3.png" width="500" height="300">
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc4.png" width="500" height="300"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc5.png" width="500" height="300">
+The final simulation of the injected salt tracer concentration after is hown below <br/>
+
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/tracer_injection_anim.gif" width="500" height="300">
 
 ### electrical conductivity:
 <img src="https://render.githubusercontent.com/render/math?math={\sigma_0}"> [S/m] = 0.01  <br/>
@@ -163,3 +166,13 @@ n=2  <br/>
 measurement array: dipole-dipole <br/> 
 from 0 - 34m <br/>
 dx = 1.0m <br/>
+
+The resulting pseudosection is shown below:
+
+
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec1.png" width="500" height="300">|
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec2.png" width="500" height="300"> <br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec3.png" width="500" height="300">|
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec4.png" width="500" height="300"> <br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec5.png" width="500" height="300">|
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec6.png" width="500" height="300">
