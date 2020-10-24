@@ -147,16 +147,9 @@ injections stopped after: steps/2  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={v_{max}}"> = 0.00127 m/s  <br/>
 cfl-criterion = <img src="https://render.githubusercontent.com/render/math?math={\frac{v_{max} \Delta t} {\Delta x}}"> = 0.93192   <br/>
 
-The final simulation of the injected salt tracer concentration after 12, 21.6, 27.6, 36, 60 and 84 hours is shown below from left to right and top down.<br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc0.png" width="500" height="300"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc1.png" width="500" height="300">
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc2.png" width="500" height="300"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc3.png" width="500" height="300">
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc4.png" width="500" height="300"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/conc5.png" width="500" height="300">
-
-and in animation form:<br/>
+The final simulation of the injected salt tracer concentration after is hown below <br/>
 
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/concentration_animation.gif" width="500" height="300">
-
-
 
 ### electrical conductivity:
 <img src="https://render.githubusercontent.com/render/math?math={\sigma_0}"> [S/m] = 0.01  <br/>
