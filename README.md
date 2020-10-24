@@ -130,7 +130,7 @@ position2 = [5,0]  <br/>
 injection load 1 [mg/l]: 5  <br/>
 injection load 2 [mg/l]: 12.5  <br/>
 dispersion rate D [m/s] = <img src="https://render.githubusercontent.com/render/math?math={\alpha \cdot v_{abs}}">  <br/>
-<img src="https://render.githubusercontent.com/render/math?math={\alpha = 10^{-3}}">  <br/>
+dispersivity <img src="https://render.githubusercontent.com/render/math?math={\alpha = 10^{-3}}">  <br/>
 
 ###### timestepping:
 steps: 5000  <br/>
