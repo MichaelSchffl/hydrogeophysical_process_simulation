@@ -170,9 +170,9 @@ dx = 1.0m <br/>
 The resulting pseudosection is shown below:
 
 
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec1.png" width="500" height="300">|
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec2.png" width="500" height="300"> <br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec3.png" width="500" height="300">|
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec4.png" width="500" height="300"> <br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec5.png" width="500" height="300">|
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec6.png" width="500" height="300">
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec1.png" width="300" height="180">
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec2.png" width="300" height="180"> <br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec3.png" width="300" height="180">
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec4.png" width="300" height="180"> <br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec5.png" width="300" height="180">
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/pseudosec6.png" width="300" height="180">
