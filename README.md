@@ -82,7 +82,7 @@ The two images below give the world dimensions, the subsurface setting that was 
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry1.png" width="350" height="345"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry2.png" width="350" height="345"><br/>
 
 The mesh for the application of FiniteElement and FiniteVolume solvers is given below. To the right, the mesh quality is shown by a colormap (green = high, red = low).<br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/mesh.png" width="442" height="330"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality2.png" width="442" height="402"><br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/mesh.png" width="442" height="330"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality.png" width="442" height="402"><br/>
 
 ### hydraulic potential:
 h1 [m] = 16  <br/>
@@ -108,9 +108,11 @@ velocity v [m/s]: <img src="https://render.githubusercontent.com/render/math?mat
 porosity <img src="https://render.githubusercontent.com/render/math?math={\phi}"> = 0.3  <br/>
 
 This is the hydraulic conductivity for each layer and feature visualized
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydr_cond2.png" width="301" height="268"> <br/>
-as well as the hydraulic head distribution <br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydraulic_grad.png" width="674" height="383">
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydr_cond.png" width="301" height="268"> <br/>
+as well as the hydraulic head distribution. <br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydraulic_grad.png" width="674" height="383"><br/>
+The velocity is can now be pictured in a colorscale with the absolute velocity as arrows pointing in the direction of the highest hydraulic gradient.<br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/velocity.png" width="674" height="383"><br/>
 
 
 ### streaming potential:
