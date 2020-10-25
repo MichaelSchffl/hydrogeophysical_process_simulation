@@ -147,7 +147,7 @@ injections stopped after: steps/2  <br/>
 <img src="https://render.githubusercontent.com/render/math?math={v_{max}}"> = 0.00127 m/s  <br/>
 cfl-criterion = <img src="https://render.githubusercontent.com/render/math?math={\frac{v_{max} \Delta t} {\Delta x}}"> = 0.93192   <br/>
 
-The final simulation of the injected salt tracer concentration after is hown below <br/>
+The final simulation of the injected salt tracer concentration is shown below <br/>
 
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/tracer_injection_anim.gif" width="500" height="300">
 
