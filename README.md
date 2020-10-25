@@ -137,7 +137,7 @@ clean sand body: <img src="https://render.githubusercontent.com/render/math?math
 The streaming potential of the given geometry can be seen here <br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/stream_pot.png" width="674" height="450"><br/>
 The plot shows the streaming potential as a function of the distance x <br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/stream_pot_x.png" width="317" height="190"><br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/stream_pot_x.png" width="475" height="245"><br/>
 
 ### tracer transport:
 2 tracer injection positions S[x,y]:  <br/>
