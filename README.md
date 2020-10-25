@@ -112,7 +112,7 @@ This is the hydraulic conductivity for each layer and feature visualized:<br/>
 as well as the hydraulic head distribution. <br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydraulic_grad.png" width="674" height="383"><br/>
 The velocity is can now be pictured in a colorscale with the absolute velocity as arrows pointing in the direction of the highest hydraulic gradient.<br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/velocity.png" width="674" height="430"><br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/velocity.png" width="674" height="450"><br/>
 
 
 ### streaming potential:
@@ -135,9 +135,9 @@ limestone, dolomite rock: <img src="https://render.githubusercontent.com/render/
 clean sand body: <img src="https://render.githubusercontent.com/render/math?math={3 \cdot 10^{-1}}"> <br/>
 
 The streaming potential of the given geometry can be seen here <br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/stream_pot.png" width="674" height="430">
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/stream_pot.png" width="674" height="450"><br/>
 The plot shows the streaming potential as a function of the distance x <br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/stream_pot.png" width="317" height="190"><br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/stream_pot_x.png" width="317" height="190"><br/>
 
 ### tracer transport:
 2 tracer injection positions S[x,y]:  <br/>
