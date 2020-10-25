@@ -71,7 +71,7 @@ This image below shows the geometry of the setup
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry4.png" width="350" height="345"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry5.png" width="674" height="383"><br/>
 The mesh quality is shown by red triangles<br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality.png" width="674" height="383">
-
+t
 ### hydraulic potential:
 h1 [m] = 16  <br/>
 h2 [m] = 10  <br/>
