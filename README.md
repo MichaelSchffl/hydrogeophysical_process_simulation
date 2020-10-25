@@ -82,7 +82,7 @@ The two images below give the world dimensions, the subsurface setting that was 
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry1.png" width="350" height="345"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry2.png" width="350" height="345"><br/>
 
 The mesh for the application of FiniteElement and FiniteVolume solvers is given below. To the right, the mesh quality is shown by a colormap (green = high, red = low).<br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/mesh.png" width="442" height="330"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality2.png" width="442" height="402"><br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/mesh.png" width="442" height="330"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality.png" width="442" height="402"><br/>
 
 ### hydraulic potential:
 h1 [m] = 16  <br/>
@@ -107,10 +107,12 @@ velocity v [m/s]: <img src="https://render.githubusercontent.com/render/math?mat
 <img src="https://render.githubusercontent.com/render/math?math={\textbf{v}_{abs} = \sqrt{\textbf{v}_x^2 plus \textbf{v}_y^2}}">  <br/>
 porosity <img src="https://render.githubusercontent.com/render/math?math={\phi}"> = 0.3  <br/>
 
-This is the hydraulic conductivity for each layer and feature visualized
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydr_cond2.png" width="301" height="268"> <br/>
-as well as the hydraulic head distribution <br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydraulic_grad.png" width="674" height="383">
+This is the hydraulic conductivity for each layer and feature visualized:<br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydr_cond.png" width="301" height="268"> <br/>
+as well as the hydraulic head distribution. <br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydraulic_grad.png" width="674" height="383"><br/>
+The velocity is can now be pictured in a colorscale with the absolute velocity as arrows pointing in the direction of the highest hydraulic gradient.<br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/velocity.png" width="674" height="450"><br/>
 
 
 ### streaming potential:
@@ -132,8 +134,10 @@ lower gravel layer: <img src="https://render.githubusercontent.com/render/math?m
 limestone, dolomite rock: <img src="https://render.githubusercontent.com/render/math?math={3 \cdot 10^{-1}}"> <br/>
 clean sand body: <img src="https://render.githubusercontent.com/render/math?math={3 \cdot 10^{-1}}"> <br/>
 
-The streaming potential of the given geometry can be seen here
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/stream_pot.png" width="674" height="383">
+The streaming potential of the given geometry can be seen here <br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/stream_pot.png" width="674" height="450"><br/>
+The plot shows the streaming potential as a function of the distance x <br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/stream_pot_x.png" width="475" height="245"><br/>
 
 ### tracer transport:
 2 tracer injection positions S[x,y]:  <br/>
