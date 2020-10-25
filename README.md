@@ -28,6 +28,7 @@ h: hydraulic head [m]<br/>
 <br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/SP.png" width="400" height="274">
 <br/>
+
 (image credit: Revil et al.(2017))<br/>
 
 
@@ -63,15 +64,25 @@ To execute the code, just download the repository and open your Jupyter Notebook
 In my example (gravel_aquifer_between_sandstone.ipynb), a gravel layer that lies inbetween two sandstone layers acts as aquifer. This means, its hydraulic conductivity is high and it can bear water well. The sandstone layers have a low hydraulic conductivity and do not carry water as well. Below these three layers follows another layer of gravel. Within the upper gravel layer is a limestone dolomite that again is a low quality aquifer. In the lower gravel layer is a fine sand body that  bears water very well, hence has a high hydraulic conductivity.
 In the following, the chosen values for each step of the process are shown, as well as the result of the above mentioned equations.
 
-### world dimensions: 
+### world dimensions and setting: 
 x-direction [m]: 0 - 34  <br/>
 y-direction [m]: -3 - 20  <br/>
 
-The two images below give the world dimensions, the subsurface setting that was chosen (see hydraulic potential section) and the boundary markers.<br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry4.png" width="350" height="345"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry2.png" width="350" height="345"><br/>
+sandstone layer (marker 1)<br/>
+-------<br/>
+gravel aquifer (marker 2)<br/>
+-------<br/>
+sandstone layer (marker 3)<br/>
+-------<br/>
+gravel aquifer (marker 4)<br/>
 
-The mesh quality is shown with the colormap<br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality.png" width="674" height="383">
+within the upper gravel layer there is a dolomite rock (limestone, marker 5) and within the lower gravel layer there is a sand body (marker 6).<br/>
+
+The two images below give the world dimensions, the subsurface setting that was chosen (see hydraulic potential section) and the region and boundary markers.<br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry1.png" width="350" height="345"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry2.png" width="350" height="345"><br/>
+
+The mesh for the application of FiniteElement and FiniteVolume solvers is given below. To the right, the mesh quality is shown by a colormap (green = high, red = low).<br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/mesh.png" width="442" height="330"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality2.png" width="442" height="402"><br/>
 
 ### hydraulic potential:
 h1 [m] = 16  <br/>
