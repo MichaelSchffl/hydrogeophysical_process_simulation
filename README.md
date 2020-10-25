@@ -28,6 +28,7 @@ h: hydraulic head [m]<br/>
 <br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/SP.png" width="400" height="274">
 <br/>
+
 (image credit: Revil et al.(2017))<br/>
 
 
@@ -71,7 +72,7 @@ The two images below give the world dimensions, the subsurface setting that was 
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry1.png" width="350" height="345"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry2.png" width="350" height="345"><br/>
 
 The mesh quality is shown with the colormap<br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/mesh.png" width="442" height="402"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality2.png" width="442" height="402">
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/mesh.png" width="442" height="330"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality2.png" width="442" height="402">
 
 ### hydraulic potential:
 h1 [m] = 16  <br/>
