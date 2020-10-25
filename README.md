@@ -67,9 +67,10 @@ In the following, the chosen values for each step of the process are shown, as w
 x-direction [m]: 0 - 34  <br/>
 y-direction [m]: -3 - 20  <br/>
 
-This image below shows the geometry of the setup 
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry4.png" width="350" height="345"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry5.png" width="674" height="383"><br/>
-The mesh quality is shown by red triangles<br/>
+The two images below give the world dimensions, the subsurface setting that was chosen (see hydraulic potential section) and the boundary markers.<br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry4.png" width="350" height="345"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry2.png" width="350" height="345"><br/>
+
+The mesh quality is shown with the colormap<br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality.png" width="674" height="383">
 
 ### hydraulic potential:
