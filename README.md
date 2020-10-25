@@ -68,7 +68,7 @@ x-direction [m]: 0 - 34  <br/>
 y-direction [m]: -3 - 20  <br/>
 
 The two images below give the world dimensions, the subsurface setting that was chosen (see hydraulic potential section) and the boundary markers.<br/>
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry4.png" width="350" height="345"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry5.png" width="350" height="255"><br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry4.png" width="350" height="345"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry2.png" width="350" height="255"><br/>
 
 The mesh quality is shown with the colormap<br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality.png" width="674" height="383">
