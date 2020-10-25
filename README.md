@@ -108,7 +108,7 @@ velocity v [m/s]: <img src="https://render.githubusercontent.com/render/math?mat
 porosity <img src="https://render.githubusercontent.com/render/math?math={\phi}"> = 0.3  <br/>
 
 This is the hydraulic conductivity for each layer and feature visualized
-<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydr_cond.png" width="674" height="383"> <br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydr_cond2.png" width="301" height="268"> <br/>
 as well as the hydraulic head distribution <br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydraulic_grad.png" width="674" height="383">
 
