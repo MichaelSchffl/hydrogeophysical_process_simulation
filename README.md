@@ -69,6 +69,7 @@ y-direction [m]: -3 - 20  <br/>
 
 This image below shows the geometry of the setup 
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry.png" width="674" height="383"><br/>
+<img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/geometry2.png" width="674" height="383"><br/>
 The mesh quality is shown by red triangles<br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/meshquality.png" width="674" height="383">
 
