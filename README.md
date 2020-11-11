@@ -109,7 +109,7 @@ porosity <img src="https://render.githubusercontent.com/render/math?math={\phi}"
 
 This is the hydraulic conductivity for each layer and feature visualized, as well as the hydraulic head distribution to the right<br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydr_cond.png" width="451" height="402"><img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/hydr_grad2.png" width="451" height="402"><br/>
-The velocity is can now be pictured in a colorscale with the absolute velocity as arrows pointing in the direction of the highest hydraulic gradient.<br/>
+The velocity can now be pictured in a colorscale with the absolute velocity as arrows pointing in the direction of the highest hydraulic gradient.<br/>
 <img src="https://github.com/MichaelSchffl/hydrogeophysical_process_simulation/blob/master/images/velocity.png" width="674" height="450"><br/>
 
 
